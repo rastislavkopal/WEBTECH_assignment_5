@@ -1,0 +1,113 @@
+html {
+    font-size: 1.2rem;
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 1.2rem;
+    background-color:#222222;
+}
+
+#mapform{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    height: 50%;
+    width: 40%;
+    min-width: 320px;
+    margin: auto;
+    color: wheat;
+    min-height: 420px;
+}
+#goToTitle{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#route{
+    height: 10%;
+    width: 80%;
+    background-color: #363535;
+    color: black;
+    border: 3px solid gold;
+    border-radius: 8px;
+    position: relative;
+    top: 5%;
+    min-width: 70px;
+    min-height: 10px;
+    font-size: 1rem;
+    color: #beadad;
+    margin: 10px;
+}
+
+#stop{
+    height: 10%;
+    width: 80%;
+    background-color: #363535;
+    color: black;
+    border: 3px solid gold;
+    border-radius: 8px;
+    position: relative;
+    top: 5%;
+    min-width: 70px;
+    min-height: 10px;
+    font-size: 1rem;
+    color: #beadad;
+    margin: 10px;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 50%;
+    width: 50%;
+    float: left;
+}
+
+#streetview{
+    height: 50%;
+    width: 50%;
+}
+#pac-input{
+    width: 100%;
+    height: 3%;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: inherit;
+    border: 0;
+    border-bottom: 2px solid #575656;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+}
+
+#pac-input:focus {
+    border-color: gold;
+}
+      
+#distance{
+    font-size: medium;
+    margin-top: 15px;
+    color: tomato;
+    margin-left: 5%;
+    display: none;
+}
+/* 
+#pac-input {
+background-color: #fff;
+font-family: Roboto;
+font-size: 15px;
+font-weight: 300;
+margin-left: 12px;
+padding: 0 11px 0 13px;
+text-overflow: ellipsis;
+width: 400px;
+} */
+

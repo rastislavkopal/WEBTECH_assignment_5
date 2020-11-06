@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <title>Mappkky</title>
+    <meta charset="UTF-8">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoIjsPiEAOLpYbWGC-cvh0Hgq44LpRk1g&libraries=places&callback=initMap"type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <script src="./js/myScript.js"></script>
+</head>
+<body>
+    
+    <div id="mapform">
+        <label for="goTo" id="goToTitle">Kam to bude:</label>
+        <input id="pac-input" type="text" placeholder="Idzeme KAM?" />
+        
+
+        <input type="radio" id="car" name="travelMode" value="DRIVING" checked>
+        <label for="car">Autom</label>
+        <input type="radio" id="walk" name="travelMode" value="WALKING">
+        <label for="walk">Peši</label>
+
+        <button id="route" onclick="calcRoute()">Vypočítaj trasu</button>
+        <button id="stop" onclick="searchBusStops()">Zobraz zastávky</button>
+        <span id="distance"></span>
+    </div>
+    <div id="map" ></div>
+    <div id="streetview"></div>
+</body>
+    
+</html>
